@@ -15,14 +15,14 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_27865322F2B1CB9814BDC09605C75B27"
-        "OwnerKey" = "8:_47253C91BB21440089DB7D736702CD09"
+        "MsmKey" = "8:_09FC624C9890FD97C5B649C26404299E"
+        "OwnerKey" = "8:_27865322F2B1CB9814BDC09605C75B27"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_35FFD2B0827111EFFB921647A6E0C7D7"
-        "OwnerKey" = "8:_27865322F2B1CB9814BDC09605C75B27"
+        "MsmKey" = "8:_27865322F2B1CB9814BDC09605C75B27"
+        "OwnerKey" = "8:_47253C91BB21440089DB7D736702CD09"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -40,12 +40,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_8074E0FA226D41F5F50CDD5CFA1E066E"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_47253C91BB21440089DB7D736702CD09"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -53,6 +47,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_27865322F2B1CB9814BDC09605C75B27"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_8074E0FA226D41F5F50CDD5CFA1E066E"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -73,6 +73,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -89,12 +105,34 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
     {
         "CustomAction"
         {
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_130AB71E81D64851AE916F46F49F9C93"
+            {
+            "Name" = "8:Primary output from Simple.Skype.AutoReplies (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_47253C91BB21440089DB7D736702CD09"
+            "FileType" = "3:2"
+            "InstallAction" = "3:2"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_C9D287D3_F191_4BDC_9357_928B17EEE003"
+            "InstallerClass" = "11:FALSE"
+            "CustomActionData" = "8:"
+            }
         }
         "DefaultFeature"
         {
@@ -118,6 +156,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_09FC624C9890FD97C5B649C26404299E"
+            {
+            "SourcePath" = "8:Skype4COM.dll"
+            "TargetName" = "8:Skype4COM.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_EB658D56DB164113BC80A1F1CD9D3739"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:4"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_27865322F2B1CB9814BDC09605C75B27"
             {
             "AssemblyRegister" = "3:1"
@@ -145,26 +203,6 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_35FFD2B0827111EFFB921647A6E0C7D7"
-            {
-            "SourcePath" = "8:Skype4COM.dll"
-            "TargetName" = "8:Skype4COM.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_EB658D56DB164113BC80A1F1CD9D3739"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:4"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
@@ -255,24 +293,24 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:Simple.Skype.AutoReplies.Installer"
+        "ProductName" = "8:SimpleSkypeAutoReplies"
         "ProductCode" = "8:{9194E93A-3667-470D-9D99-0D2C7D523909}"
-        "PackageCode" = "8:{642B19D7-8B70-4CEA-B49A-58EA41151404}"
+        "PackageCode" = "8:{287F3574-8E1E-4A59-A981-880F73274B1C}"
         "UpgradeCode" = "8:{6652C724-0136-47D5-902E-27F9BE307550}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
-        "InstallAllUsers" = "11:FALSE"
+        "InstallAllUsers" = "11:TRUE"
         "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:Microsoft"
+        "Manufacturer" = "8:Sreejesh"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:Simple.Skype.AutoReplies.Installer"
+        "Title" = "8:SimpleSkypeAutoReplies"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:Microsoft"
+        "ARPCONTACT" = "8:Sreejesh"
         "Keywords" = "8:"
-        "ARPCOMMENTS" = "8:"
+        "ARPCOMMENTS" = "8:Send automatic replies while you are away."
         "ARPURLINFOABOUT" = "8:"
         "ARPPRODUCTICON" = "8:"
         "ARPIconIndex" = "3:0"
